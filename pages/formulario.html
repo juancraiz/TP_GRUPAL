@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario </title>
+</head>
+<body>
+    <h1>Formulario de contacto</h1>
+        <!--  <form action "/database" method="get">  lo q este adentro del form se cargara en la database -->
+          <!--lo dejaremos sin el data base porque no creamos el dataa base en el front end aun -->
+           
+        <form action="" method="post" id="formregister"> <!--metodo post oculta la informacion que envia el cliente al usuario-->>
+          <label for="nombre"> Nombre</label><br>
+           <input type="text" id="nombre" name="nombre" required> <br> <!-- me hace writeln el br  -->
+          <!--aqui ponemos que es de tipo texto y tipo nombre a su vez el dato q se va a iingresar -->
+           
+           <label for="apellido">Apellido</label>  <br>
+           <input type="text" id="apellido" name="apellido" autofocus> <br> 
+           
+           <label for="dni">DNI</label>  <br>
+           <input type="number" id="dni" name="dni" minlength="8" maxlength="8"> <br>
+            
+           <label for="edad">Edad</label>  <br>
+           <input type="number" id="edad" name="edad" min="0" max="100"> <br>
+
+           <label for="password">Password</label>  <br>
+           <input type="password" id="password" name="password" minlength="8"> <br>
+              
+           <label for="email">Email</label>  <br>
+           <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="juancito123@gmail.com"> <br>
+                         
+           <input type="submit" value="Enviar datos">  <!-- el submit me envia los datos mediante el input y lo envia a la url /dat -->          
+      <!-- <input type="button" value="Enviar datos">  -->
+      <button>
+<!-- <envia datos con button type="button" value="Enviar datos">  -->
+      </button>    
+    
+    </form>
+  <!--   no puede estar fuera del form <label for="Apellido"></label>  
+ <input type="text"> -->
+
+       <div>
+        <button>
+           <a href="../index.htmlpiedepágina">Ruta relativa</a>
+        </button>   
+       </div>
+
+       <div>
+        <button>
+           <a href="https://aulasvirtuales.frba.utn.edu.ar" target="_blank">Ruta absoluta</a>
+        </button>   
+       </div>
+       
+       <img src ="https://es.wikipedia.org/wiki/Historia_de_Boca_Juniors_%28f%C3%BAtbol%29" alt="Escudo de boca"  >
+       <a href="../pages/accesorios.html">
+       <img src ="../assets/images/escudoboca" alt="Escudo de boca"  >
+        </a>
+    </body>
+</html>
